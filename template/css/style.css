@@ -1,0 +1,156 @@
+html{
+    font-size: 62.5%;  /* 16px*62.5 =10px=1rem */
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font: 1.6rem Helvetica;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 5rem;
+}
+.header{
+    grid-area: header;
+    color: #ffffff;
+    background-color: #131921;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main{
+    grid-area: main;
+    background-color: #EAEDED;
+    min-height: 100vh;
+}
+.footer{
+    grid-area: footer;
+    background-color: #131921;
+}
+
+/* home header*/
+
+.header .brand a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2.6rem;
+    margin-left: .5rem;
+}
+
+.header .menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .menu a{
+    flex: auto;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 1.5rem;
+    font-size: 2.2rem;
+}
+
+.header a:hover{
+    color: rgb(230, 99, 52);
+}
+
+/* home main*/
+
+.products{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.products li{
+    flex :0 1 auto;
+    height: 45rem;
+    list-style-type: none;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: 1.2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: .15rem #c0c0c0 solid;
+}
+
+.product-img{
+    width:33rem;
+    height:35rem;
+    text-align: center;
+    background-color: #eaecec;
+    border-radius: 0.7rem;
+}
+.product-img img{
+    height: 100%;
+    max-width: 33rem;
+}
+
+.product-name a{
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: rgb(50, 50, 226);
+}
+
+.product-name a:hover{
+    color:tomato;
+}
+
+.product-brand {
+    font-size :1.2rem;
+    font-weight: 500;
+    color:rgb(128, 121, 121);
+}
+
+.product-price{
+    font-size:2.2rem;
+    font-weight: 500;
+    color:rgb(233, 29, 29);
+}
+
+.product-rating{
+    font-weight: 650;
+}
+
+/* sidebar */
+
+.brand button{
+    background: none;
+    font-size:2.5rem;
+    border:none;
+    color:white;
+    cursor: pointer;
+}
+
+.sidebar{
+    position: fixed;
+    transform: translateX(-30rem);
+    background-color: #f0f0f0;
+    height: 100%;
+    width: 30rem;
+}
+
+.sidebar.open{
+    transform: translateX(0);
+}
+
+.sidebar-close{
+    border-radius: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 2rem;
+    position: absolute;
+    top:1rem;
+    right: .5rem;
+    cursor: pointer;
+}

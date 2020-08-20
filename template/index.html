@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css"></style>
+    <title>My shop</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="brand">
+                <button onclick="openMenu();">
+                    &#9776;
+                </button>
+                <a href="index.html">My shop</a>
+            </div>
+            <div class="menu">
+                <a href="">Cart</a>
+                <a href="">Sign In</a>
+            </div>
+        </div>
+        <aside class="sidebar">
+            <h3>Shopping Categories</h3>
+            <button class="sidebar-close" onclick="closeMenu();">X</button>
+            <ul>
+                <li>
+                    <a>pants</a>
+                </li>
+                <li>
+                    <a>Shirts</a>
+                </li>
+            </ul>
+        </aside>
+        <div class="main">
+            <div class="content">
+                <ul class="products">
+                    <li class="product">
+                        <div class="product-img">
+                            <img src="./img/shirt1.jpg" />
+                        </div>
+                        <div class="product-name">
+                            <a href="">Slim shirt</a>
+                        </div>
+                        <div class="product-brand">Nike</div>
+                        <div class="product-price">$70</div>
+                        <div class="product-rating">4.5 Stars(10 Reviwes)</div>
+                    </li>
+                    <li class="product">
+                        <div class="product-img">
+                            <img src="./img/shirt2.jpg" />
+                        </div>
+                        <div class="product-name">
+                            <a href="">Slim shirt</a>
+                        </div>
+                        <div class="product-brand">Nike</div>
+                        <div class="product-price">$70</div>
+                        <div class="product-rating">4.5 Stars(10 Reviwes)</div>
+                    </li>
+                    <li class="product">
+                        <div class="product-img">
+                            <img src="./img/shirt3.png" />
+                        </div>
+                        <div class="product-name">
+                            <a href="">Slim shirt</a>
+                        </div>
+                        <div class="product-brand">Nike</div>
+                        <div class="product-price">$70</div>
+                        <div class="product-rating">4.5 Stars(10 Reviwes)</div>
+                    </li>
+                    <li class="product">
+                        <div class="product-img">
+                            <img src="./img/shirt1.jpg" />
+                        </div>
+                        <div class="product-name">
+                            <a href="">Slim shirt</a>
+                        </div>
+                        <div class="product-brand">Nike</div>
+                        <div class="product-price">$70</div>
+                        <div class="product-rating">4.5 Stars(10 Reviwes)</div>
+                    </li>
+                    <li class="product">
+                        <div class="product-img">
+                            <img src="./img/shirt1.jpg" />
+                        </div>
+                        <div class="product-name">
+                            <a href="">Slim shirt</a>
+                        </div>
+                        <div class="product-brand">Nike</div>
+                        <div class="product-price">$70</div>
+                        <div class="product-rating">4.5 Stars(10 Reviwes)</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+<script>
+    function openMenu(){
+        document.querySelector(".sidebar").classList.add("open");
+    }
+
+    function closeMenu(){
+        document.querySelector(".sidebar").classList.remove('open');
+    }
+</script>
+</html>
